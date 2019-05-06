@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Songs</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="js/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="div_header" class="header">
+        <h3>Developer Skills</h3>
+    </div>
+    <div id="div_content" class="container container-fluid">
+        <div class="row">
+            <div class="col-md-5" id="formTabs">
+                <ul>
+                    <li><a href="#divAddSkill">Skill Form</a></li>
+                    <li><a href="#divAddDeveloper">Developer Form</a></li>
+                    <li><a href="#divAddSkillAssessment">Skill Assessment Form</a></li>
+                </ul>
+                <div id="divAddSkill">
+                    <h3>Add a Skill</h3>
+                    <form id="formSkill">
+                        <label>Skill:</label>
+                        <input class="form-control" type="text" name="skill" id="skill" required />
+                        <br>
+                        <button class="btn btn-primary">Add</button>
+                    </form>
+
+                </div>
+                <div id="divAddDeveloper">
+                    <h3>Add a Developer</h3>
+                    <form id="formDeveloper">
+                        <label>First Name:</label>
+                        <input type="text" class="form-control" name="firstName" id="firstName" required />
+                        <label>Middle Name:</label>
+                        <input type="text" class="form-control" name="middleName" id="middleName" />
+                        <label>Last Name:</label>
+                        <input type="text" class="form-control" name="lastName" id="lastName" />
+                        <label>Birth Date:</label>
+                        <input type="text" class="form-control" name="birthDate" id="birthDate" />
+                        <label>Position:</label>
+                        <input type="text" class="form-control" name="position" id="position" />
+                        <br/>
+                        <button class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+                <div id="divAddSkillAssessment">
+                    <h3>Add Skill Assessment</h3>
+                    <form id="formSkillAssessment">
+                        <label>Developer:</label>
+                        <select class="form-control" name="saDeveloper" id="saDeveloper"></select>
+                        <label>Skill:</label>
+                        <select class="form-control" name="saSkill" id="saSkill"></select>
+                        <label>Skill Level:</label>
+                        <select class="form-control" name="saSkillLevel" id="saSkillLevel"></select>
+                        <label>Months of Experience:</label>
+                        <input class="form-control" type="number" name="monthsOfExperience" id="monthsOfExperience" />
+                        <br/>                    
+                        <button class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6" id="tableTabs">
+                <ul>
+                    <li><a href="#divSkill">Skills</a></li>
+                    <li><a href="#divDevelopers">Developers</a></li>
+                    <li><a href="#divReports">Skill Capability Report</a></li>
+                </ul>
+                <div id="divSkill">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodySkills"></tbody>
+                    </table>
+                </div>
+                <div id="divDevelopers">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Developers</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyDevelopers"></tbody>
+                    </table>
+                </div>
+                <div id="divReports">
+                    <table class="table table-hover" id="tableSkillCapabilityReport">
+                        <thead id="theadSkillCapabilityReport"></thead>
+                        <tbody id="tbodySkillCapabilityReport"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div>
+    <br>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://github.com/granaderos"> Marejean Perpinosa</a>
+        </div>
+    </footer>
+          
+</body>
+</html> 

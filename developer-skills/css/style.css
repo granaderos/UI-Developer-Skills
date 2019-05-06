@@ -1,0 +1,19 @@
+#div_header {
+    padding: 25px;
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+footer {
+    bottom: 0px !important;
+    padding: 20px;
+    background-color: ghostwhite;
+}
+
+
+#div_artist_other,
+#div_label_other,
+#div_genre_other {
+    display: none;
+    margin-left: 30px;
+}
